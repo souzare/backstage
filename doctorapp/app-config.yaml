@@ -39,17 +39,13 @@ proxy:
     changeOrigin: true
 
 database:
-  # config options: https://node-postgres.com/api/client
   client: pg
   connection:
     host: 127.0.0.1
     port: 5432
     user: postgres
     password: secret
-    # https://node-postgres.com/features/ssl
-    #ssl: require # see https://www.postgresql.org/docs/current/libpq-ssl.html Table 33.1. SSL Mode Descriptions (e.g. require)
-      #ca: # if you have a CA file and want to verify it you can uncomment this section
-      #$file: <file-path>/ca/server.crt
+    
 
 # Reference documentation http://backstage.io/docs/features/techdocs/configuration
 # Note: After experimenting with basic setup, use CI/CD to generate docs
