@@ -38,7 +38,7 @@ backend:
 integrations:
   github:
     - host: github.com
-      token: ${GITHUB_TOKEN}
+      token: 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
     ### Example for how to add your GitHub Enterprise instance using the API:
     # - host: ghe.example.net
     #   apiBaseUrl: https://ghe.example.net/api/v3
@@ -62,7 +62,12 @@ techdocs:
 
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
-  providers: {}
+  environment: development
+  providers:
+    github:
+      development:
+        clientId: 550929224487f45fc1a4
+        clientSecret: ff6110af8c6256c1909c0c2d0cf002e5c356ba36
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
