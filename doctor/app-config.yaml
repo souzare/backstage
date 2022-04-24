@@ -1,6 +1,6 @@
 app:
   title: Scaffolded Backstage App
-  baseUrl: http://ec2-44-203-224-92.compute-1.amazonaws.com:3000
+  baseUrl: http://ec2-3-237-202-211.compute-1.amazonaws.com:3000
 
 organization:
   name: My Company
@@ -12,7 +12,7 @@ backend:
   # auth:
   #   keys:
   #     - secret: ${BACKEND_SECRET}
-  baseUrl: http://ec2-44-203-224-92.compute-1.amazonaws.com:7007
+  baseUrl: http://ec2-3-237-202-211.compute-1.amazonaws.com:7007
   listen:
     port: 7007
   csp:
@@ -20,7 +20,7 @@ backend:
     # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
     # Default Helmet Content-Security-Policy values can be removed by setting the key to false
   cors:
-    origin: http://ec2-44-203-224-92.compute-1.amazonaws.com:3000
+    origin: http://ec2-3-237-202-211.compute-1.amazonaws.com:3000
     methods: [GET, POST, PUT, DELETE]
     credentials: true
   database:
